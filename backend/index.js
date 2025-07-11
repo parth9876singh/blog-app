@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-  origin: "https://blog-app-tc0o.onrender.com",
+  origin: "https://blog-app-ten-phi.vercel.app",
   credentials: true,
   methods:["GET","PUT","POST","DELETE"],
 }));
