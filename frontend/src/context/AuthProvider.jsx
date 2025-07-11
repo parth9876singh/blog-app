@@ -13,7 +13,7 @@ export const AuthProvider = ({ children }) => {
     const fetchProfile = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4001/api/users/my-profile",
+          "https://blog-app-tc0o.onrender.com/api/users/my-profile",
           {
             withCredentials: true,
             headers: { "Content-Type": "application/json" },
@@ -33,7 +33,7 @@ export const AuthProvider = ({ children }) => {
     const fetchBlogs = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4001/api/blogs/all-blog",
+          "https://blog-app-tc0o.onrender.com/api/blogs/all-blog",
           { withCredentials: true }
         );
         console.log("Axios response1:", response);

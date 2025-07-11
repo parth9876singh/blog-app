@@ -14,7 +14,7 @@ function Creator() {
       try {
         setLoading(true);
         const { data } = await axios.get(
-          "http://localhost:4001/api/users/admins",
+          "https://blog-app-tc0o.onrender.com/api/users/admins",
           { withCredentials: true }
         );
         setAdmin(data.admin);

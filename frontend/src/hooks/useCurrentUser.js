@@ -5,7 +5,7 @@ export default function useCurrentUser() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:4001/api/users/me", {
+    fetch("https://blog-app-tc0o.onrender.com/api/users/me", {
       credentials: "include",
     })
       .then((res) => (res.ok ? res.json() : null))

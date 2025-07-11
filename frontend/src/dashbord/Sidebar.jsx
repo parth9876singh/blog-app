@@ -68,7 +68,7 @@ const Sidebar = ({ setComponent }) => {
   const handleLogout = async (e) => {
     e.preventDefault();
     try {
-     const {data} =  await axios.get("http://localhost:4001/api/users/logout", { 
+     const {data} =  await axios.get("https://blog-app-tc0o.onrender.com/api/users/logout", { 
         withCredentials: true 
       });
       toast.success(data.message)

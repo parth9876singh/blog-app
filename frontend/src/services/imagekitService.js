@@ -9,7 +9,7 @@ export const imagekitService = {
       Colors: Professional color scheme
       No text overlay needed`;
       
-      const response = await fetch('http://localhost:4001/api/imagekit/generate', {
+      const response = await fetch('https://blog-app-tc0o.onrender.com/api/imagekit/generate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ export const imagekitService = {
   // Edit image using AI
   editImage: async (imageUrl, editInstructions) => {
     try {
-      const response = await fetch('http://localhost:4001/api/imagekit/edit', {
+      const response = await fetch('https://blog-app-tc0o.onrender.com/api/imagekit/edit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ export const imagekitService = {
   // Generate image variations
   generateImageVariations: async (imageUrl, count = 3) => {
     try {
-      const response = await fetch('http://localhost:4001/api/imagekit/variations', {
+      const response = await fetch('https://blog-app-tc0o.onrender.com/api/imagekit/variations', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

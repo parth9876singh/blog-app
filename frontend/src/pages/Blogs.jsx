@@ -24,7 +24,7 @@ const Blogs = () => {
       if (categoryFilter) params.append('category', categoryFilter);
       if (authorFilter) params.append('author', authorFilter);
 
-      const response = await fetch(`http://localhost:4001/api/blogs/all-blog?${params}`);
+      const response = await fetch(`https://blog-app-tc0o.onrender.com/api/blogs/all-blog?${params}`);
       const data = await response.json();
       setBlogs(data.allBlogs || []);
 

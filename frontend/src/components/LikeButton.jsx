@@ -8,7 +8,7 @@ const LikeButton = ({ blogId, initialLikes = 0, initialIsLiked = false, onLikeTo
   const handleLike = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:4001/api'}/blogs/${blogId}/like`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL || 'https://blog-app-tc0o.onrender.com/api'}/blogs/${blogId}/like`, {
         method: 'POST',
         credentials: 'include',
       });

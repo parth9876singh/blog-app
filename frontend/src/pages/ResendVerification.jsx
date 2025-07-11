@@ -19,7 +19,7 @@ const ResendVerification = () => {
     setIsLoading(true);
     
     try {
-      const response = await axios.post('http://localhost:4001/api/users/resend-verification', {
+      const response = await axios.post('https://blog-app-tc0o.onrender.com/api/users/resend-verification', {
         email: email
       });
       

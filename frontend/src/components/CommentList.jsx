@@ -15,7 +15,7 @@ const CommentList = ({ blogId, refresh }) => {
     setLoading(true);
     fetch(
       `${
-        import.meta.env.VITE_API_URL || "http://localhost:4001/api"
+        import.meta.env.VITE_API_URL || "https://blog-app-tc0o.onrender.com/api"
       }/comments/${blogId}`
     )
       .then((res) => res.json())
@@ -36,7 +36,7 @@ const CommentList = ({ blogId, refresh }) => {
     try {
       const res = await fetch(
         `${
-          import.meta.env.VITE_API_URL || "http://localhost:4001/api"
+          import.meta.env.VITE_API_URL || "https://blog-app-tc0o.onrender.com/api"
         }/comments/${commentId}`,
         {
           method: "DELETE",

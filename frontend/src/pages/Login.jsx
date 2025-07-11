@@ -20,7 +20,7 @@ const Login = () => {
     setIsLoading(true);
     
     try{
-      const {data}  = await axios.post('http://localhost:4001/api/users/login',{email,password,role} , { withCredentials: true });
+      const {data}  = await axios.post('https://blog-app-tc0o.onrender.com/api/users/login',{email,password,role} , { withCredentials: true });
       console.log(data);
       toast.success("Login Successful");
       setProfile(data);

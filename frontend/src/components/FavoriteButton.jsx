@@ -7,7 +7,7 @@ const FavoriteButton = ({ blogId, initialIsFavorited = false, onFavoriteToggled 
   const handleFavorite = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:4001/api'}/users/favorites/${blogId}`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL || 'https://blog-app-tc0o.onrender.com/api'}/users/favorites/${blogId}`, {
         method: 'POST',
         credentials: 'include',
       });

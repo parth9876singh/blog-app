@@ -55,7 +55,7 @@ const Register = () => {
     formData.append('photo', photo);
 
     try{
-      const {data}  = await axios.post('http://localhost:4001/api/users/register', formData);
+      const {data}  = await axios.post('https://blog-app-tc0o.onrender.com/api/users/register', formData);
       console.log(data);
       
       // Show success message about email verification

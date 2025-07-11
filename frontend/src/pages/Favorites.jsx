@@ -15,7 +15,7 @@ function Favorites() {
 
   const fetchFavorites = async () => {
     try {
-      const response = await fetch('http://localhost:4001/api/users/favorites', {
+      const response = await fetch('https://blog-app-tc0o.onrender.com/api/users/favorites', {
         credentials: 'include',
       });
       if (!response.ok) throw new Error('Failed to fetch favorites');
