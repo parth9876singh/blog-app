@@ -13,7 +13,7 @@ Designed with a clean dark theme and modern UI, it helps users easily share thou
 ✅ Clean UX: Smooth navigation with intuitive UI and animation effects.
 
 🛠 Tech Stack
-Frontend: React.js, Tailwind CSS, React Router, React Hook Form
+Frontend: React.js, Framer Motion,Tailwind CSS,
 
 Backend: Node.js, Express.js, MongoDB, Mongoose
 
