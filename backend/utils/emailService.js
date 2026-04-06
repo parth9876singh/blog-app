@@ -4,11 +4,14 @@ import crypto from 'crypto';
 // Create transporter for Gmail
 const createTransporter = () => {
   return nodemailer.createTransport({
-    service: 'gmail',
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true, // MUST be true for 465
     auth: {
-      user: process.env.EMAIL_USER, // Your Gmail address
-      pass: process.env.EMAIL_PASSWORD // Your Gmail app password
-    }
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASSWORD // App password only
+    },
+    connectionTimeout: 10000, // prevent hanging
   });
 };
 
