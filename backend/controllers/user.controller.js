@@ -2,7 +2,7 @@ import { User } from "../models/user.model.js";
 import cloudinary from "cloudinary";
 import bcrypt from "bcryptjs";
 import createTokenAndSaveCookies from "../jwt/AuthToken.js";
-import { generateVerificationToken, sendVerificationEmail } from "../utils/emailService.js";
+import { generateVerificationToken, sendVerificationEmail } from "../utils/sendEmail.js";
 
 //code for register
 export const register = async (req, res) => {
